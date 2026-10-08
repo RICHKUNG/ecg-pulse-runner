@@ -88,7 +88,7 @@ The adaptive ensemble is clearly more robust in noise, but at roughly 100 ms mor
 - Recognizer latency averaged 203 ms (43–501 ms) in this run.
 - **Known weakness:** none of the 6 pure-noise clips were rejected; all triggered a command. The rejection threshold was tuned loose to avoid missed jumps, which trades away false-positive control. A garbage/noise template class or an SNR gate is the obvious next step.
 
-Full reports: [`docs/results/live_qa/`](docs/results/live_qa). Experiment history: [`docs/EXPERIMENT_HISTORY.md`](docs/EXPERIMENT_HISTORY.md).
+Full reports: [`docs/results/live_qa/`](docs/results/live_qa); rerun with `python scripts/test_QA_audio.py --method mfcc_dtw` (writes a new report and confusion matrix there). Experiment history: [`docs/EXPERIMENT_HISTORY.md`](docs/EXPERIMENT_HISTORY.md).
 
 <br clear="right">
 
@@ -114,7 +114,7 @@ src/                   audio/, ecg/, game/, event_bus.py, config.py
 cmd_templates/         default command templates (+ augmented variants)
 cmd_templates_chinese/ Mandarin command templates
 tests/                 pytest suites, arena benchmarks, QA scripts; tests/record/ holds their output
-scripts/               analysis tools (failure analysis, template checks, latency profiling)
+scripts/               live QA test, template augmentation, failure analysis, latency profiling; scripts/archive/ holds one-off dev scripts
 record/                experiment logs written by the scripts
 docs/                  architecture, experiment history, testing guide, results, dev notes
 ```

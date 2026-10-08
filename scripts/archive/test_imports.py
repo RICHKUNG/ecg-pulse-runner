@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 # 加入 src 路徑
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # scripts/archive -> repo root
 
 print("=" * 60)
 print("模組導入測試")

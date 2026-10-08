@@ -12,7 +12,7 @@ import threading
 
 # Ensure the project root is in the Python path for module imports
 _current_dir = os.path.dirname(os.path.abspath(__file__))
-_project_root = os.path.dirname(_current_dir)
+_project_root = os.path.dirname(os.path.dirname(_current_dir))  # scripts/archive -> repo root
 if _project_root not in sys.path:
     sys.path.insert(0, _project_root)
 

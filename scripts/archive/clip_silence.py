@@ -95,9 +95,9 @@ def clip_audio_file(input_path, output_path, top_db=30, frame_length=512, hop_le
 
 def main():
     # Setup paths
-    base_dir = Path(__file__).resolve().parent.parent
+    base_dir = Path(__file__).resolve().parents[2]  # scripts/archive -> repo root
     input_dir = base_dir / "cmd_templates"
-    output_dir = base_dir / "new_templates"
+    output_dir = base_dir / "cmd_templates_chinese" / "old" / "new_templates"
 
     # Create output directory if it doesn't exist
     output_dir.mkdir(exist_ok=True)
