@@ -425,7 +425,7 @@ def test_qa_audio():
     # Generate report
     if stats['total'] > 0:
         # Ensure record directory exists
-        record_dir = os.path.join(_project_root, 'temp', 'record')
+        record_dir = os.path.join(_project_root, 'docs', 'results', 'live_qa')
         os.makedirs(record_dir, exist_ok=True)
 
         print(f"\n[Report] Generating report to: {record_dir}")

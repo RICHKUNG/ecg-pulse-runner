@@ -1,8 +1,9 @@
 """
 簡單測試：驗證重構後的模組可以正常 import
 """
+import os
 import sys
-sys.path.insert(0, 'C:/Users/user/Desktop/DSPLab/Final')
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))  # repo root
 
 print("Testing imports...")
 

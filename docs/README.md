@@ -31,12 +31,14 @@ This directory contains the comprehensive documentation for the Bio-Voice Comman
 
 ---
 
-## 📂 Quick Links
+## 📂 Other material
 
--   **Templates**: `../cmd_templates/` (Reference audio files)
--   **Source Code**: `../src/`
--   **Test Scripts**: `../tests/` & `../temp/`
+-   **[User guide (繁體中文)](user-guide.zh-TW.md)**: calibration flow, freedom mode, controls, ECG fallback options.
+-   **[Results](results/)**: live-microphone QA reports and confusion matrices (`results/live_qa/`), template distance table.
+-   **[Development notes](dev-notes/)**: integration log, ensemble arena report, file-organization notes; older notes in `dev-notes/archive/`.
+-   **[Course documents](course/)**: project proposal and TA feedback.
+-   **Experiment logs**: `../record/` and `../tests/record/` (JSON/Markdown output of the arena and QA scripts).
 
 ---
 
-*Last Updated: 2025-12-13*
+*Last Updated: 2026-10-08*
