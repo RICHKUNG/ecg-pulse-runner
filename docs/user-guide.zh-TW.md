@@ -252,12 +252,12 @@ python app.py --freedom
     ```bash
     # 使用 VoiceController (與 app.py 相同流程) 進行即時測試
     # 由使用者輸入正確答案，最後輸出 confusion matrix 圖片
-    python temp/test_QA_audio.py --method mfcc_dtw
+    python scripts/test_QA_audio.py --method mfcc_dtw
 
     # 或使用其他辨識方法
-    python temp/test_QA_audio.py --method adaptive_ensemble
+    python scripts/test_QA_audio.py --method adaptive_ensemble
 
-    # 測試完成後會在 temp/record/ 目錄下產生：
+    # 測試完成後會在 docs/results/live_qa/ 目錄下產生：
     # - Markdown 報告 (詳細統計資料)
     # - Confusion Matrix 圖片 (視覺化評估結果)
     ```
@@ -290,10 +290,10 @@ python app.py --freedom
 
 ```bash
 # 預覽模式：查看將產生的檔案，不實際寫入
-python temp/augment_templates.py --dry-run
+python scripts/augment_templates.py --dry-run
 
 # 執行模式：實際產生增強檔案
-python temp/augment_templates.py --execute
+python scripts/augment_templates.py --execute
 ```
 
 ### 增強策略

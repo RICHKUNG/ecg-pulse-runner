@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 # Add src path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # scripts/archive -> repo root
 
 print("="  * 60)
 print("Module Import Test (Import Only)")
