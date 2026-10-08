@@ -269,7 +269,7 @@ python app.py --voice-method mfcc_dtw
 
 ## 📖 參考文件
 
-- [原語音系統 README](README.md)
+- [原語音系統 README](../user-guide.zh-TW.md)
 - [實驗記錄](docs/)
 - [整合計畫](C:\Users\user\.claude\plans\snuggly-cooking-pond.md)
 - [進度追蹤](great_merge.md)

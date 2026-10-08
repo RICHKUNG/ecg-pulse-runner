@@ -1,9 +1,10 @@
 """
 測試重構後的 ECGAdapter (使用 ECGProcessor)
 """
+import os
 import sys
 import time
-sys.path.insert(0, 'C:/Users/user/Desktop/DSPLab/Final')
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))  # repo root
 
 from src.ecg.adapter import ECGAdapter
 from src.event_bus import EventBus, EventType
