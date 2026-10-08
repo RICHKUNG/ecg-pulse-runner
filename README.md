@@ -17,7 +17,7 @@ Final project for the **Digital Signal Processing Laboratory** at National Tsing
 ## Highlights
 
 - **Training-free recognizer.** Energy-based VAD → 39-dimensional MFCC (13 + Δ + ΔΔ) → DTW against a handful of recorded templates per command. No model training, so a new player can recalibrate in seconds.
-- **Measured trade-off, not just a best number.** Four matching strategies were benchmarked under time-stretch, pitch-shift and additive-noise augmentation. The adaptive ensemble was the most accurate (97.9%), but the game ships with MFCC-DTW because it answers about 100 ms sooner, which matters for a `JUMP`.
+- **Measured trade-off, not just a best number.** Four matching strategies were benchmarked leave-one-out under time-stretch, pitch-shift and additive-noise augmentation. The adaptive ensemble was the most accurate (97.9%), but the game ships with MFCC-DTW because it answers about 100 ms sooner, which matters for a `JUMP`.
 - **Live-microphone validation.** 85.3% command accuracy (29/34) in a live test with a speaker outside the template set.
 - **Graceful hardware fallback.** If the ECG board is missing or the signal drops for 5 s, the game switches to a synthetic heartbeat and keeps retrying the real sensor.
 
@@ -68,7 +68,7 @@ flowchart LR
 
 ### Strategy benchmark (offline arena)
 
-Recorded templates replayed with time-stretch, pitch-shift and additive-noise augmentation. Latency is recognizer compute time per utterance.
+Leave-one-out over the recorded templates (each clip is matched against all the others), with time-stretch, pitch-shift and additive-noise augmentation. Latency is recognizer compute time per utterance.
 
 | Strategy | Overall accuracy | 10 dB SNR accuracy | Avg. latency |
 |----------|-----------------:|-------------------:|-------------:|
