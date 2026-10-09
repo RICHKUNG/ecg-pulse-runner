@@ -10,8 +10,10 @@ A side-scrolling runner where **your heartbeat builds the level and your voice p
 Final project for the **Digital Signal Processing Laboratory** at National Tsing Hua University (Fall 2025), built by a team of three. **My part was the voice-command recognition pipeline**: segmentation, feature extraction, template matching, and the benchmark that chose between four matching strategies.
 
 <p align="center">
-  <img src="docs/assets/gameplay.png" alt="Gameplay: a red player block on an ECG baseline with green spike obstacles, BPM and distance shown in the header" width="720">
-  <br><sub>Gameplay in ECG-fallback mode (simulated 75 BPM signal). Spikes above and below the baseline are heartbeats.</sub>
+  <img src="docs/assets/real_demo.gif" alt="A player at a lab desk with the Arduino ECG board in front of him; the monitor shows the green ECG-style game with heartbeat spikes scrolling past" width="480">
+  &nbsp;
+  <img src="docs/assets/gameplay.png" alt="Gameplay: a red player block on an ECG baseline with green spike obstacles, BPM and distance shown in the header" width="480">
+  <br><sub>Left: the live demo with the real ECG board (sped up 1.5×; voice commands are not audible in a GIF). Right: the game screen in ECG-fallback mode (simulated 75 BPM). Spikes above and below the baseline are heartbeats.</sub>
 </p>
 
 ## Highlights
